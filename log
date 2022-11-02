@@ -1,0 +1,697 @@
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_20/2_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 1
+Benchmarking variant XMSSMT-SHA2_20/2_256
+Generating keypair.. took 865906.260000 us (0.87 sec), 3118500216 cycles
+Creating 16 signatures..
+	median        : 3768984 cycles
+	average       : 4754846 cycles
+
+Verifying 16 signatures..
+	median        : 1676682 cycles
+	average       : 1677840 cycles
+
+Signature size: 4899 (4.78 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 5966 (5.83 KiB)
+Benchmarking XMSSMT-SHA2_20/2_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_20/4_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 2
+Benchmarking variant XMSSMT-SHA2_20/4_256
+Generating keypair.. took 57183.306000 us (0.06 sec), 205928460 cycles
+Creating 16 signatures..
+	median        : 6701778 cycles
+	average       : 6044383 cycles
+
+Verifying 16 signatures..
+	median        : 3302856 cycles
+	average       : 3313293 cycles
+
+Signature size: 9123 (8.91 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 10842 (10.59 KiB)
+Benchmarking XMSSMT-SHA2_20/4_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_40/4_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 4
+Benchmarking variant XMSSMT-SHA2_40/4_256
+Generating keypair.. took 1697065.981000 us (1.70 sec), 6111330408 cycles
+Creating 16 signatures..
+	median        : 6775578 cycles
+	average       : 7514131 cycles
+
+Verifying 16 signatures..
+	median        : 3367674 cycles
+	average       : 3387960 cycles
+
+Signature size: 9765 (9.54 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 15156 (14.80 KiB)
+Benchmarking XMSSMT-SHA2_40/4_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_40/8_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 5
+Benchmarking variant XMSSMT-SHA2_40/8_256
+Generating keypair.. took 117029.362000 us (0.12 sec), 421704720 cycles
+Creating 16 signatures..
+	median        : 6636150 cycles
+	average       : 6011539 cycles
+
+Verifying 16 signatures..
+	median        : 6578640 cycles
+	average       : 6579158 cycles
+
+Signature size: 18213 (17.79 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 24292 (23.72 KiB)
+Benchmarking XMSSMT-SHA2_40/8_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_60/6_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 7
+Benchmarking variant XMSSMT-SHA2_60/6_256
+Generating keypair.. took 2558254.320000 us (2.56 sec), 9212217048 cycles
+Creating 16 signatures..
+	median        : 9834372 cycles
+	average       : 9980906 cycles
+
+Verifying 16 signatures..
+	median        : 5043978 cycles
+	average       : 5175372 cycles
+
+Signature size: 14632 (14.29 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 24347 (23.78 KiB)
+Benchmarking XMSSMT-SHA2_60/6_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_60/12_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 8
+Benchmarking variant XMSSMT-SHA2_60/12_256
+Generating keypair.. took 164026.465000 us (0.16 sec), 590852376 cycles
+Creating 16 signatures..
+	median        : 6655554 cycles
+	average       : 6027165 cycles
+
+Verifying 16 signatures..
+	median        : 9848970 cycles
+	average       : 9861739 cycles
+
+Signature size: 27304 (26.66 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 37743 (36.86 KiB)
+Benchmarking XMSSMT-SHA2_60/12_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_20/2_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 9
+Benchmarking variant XMSSMT-SHA2_20/2_512
+Generating keypair.. took 6046313.408000 us (6.05 sec), 21771015228 cycles
+Creating 16 signatures..
+	median        : 26223552 cycles
+	average       : 33234900 cycles
+
+Verifying 16 signatures..
+	median        : 11456892 cycles
+	average       : 11456512 cycles
+
+Signature size: 17987 (17.57 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 15758 (15.39 KiB)
+Benchmarking XMSSMT-SHA2_20/2_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_20/4_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 10
+Benchmarking variant XMSSMT-SHA2_20/4_512
+Generating keypair.. took 401181.381000 us (0.40 sec), 1444733100 cycles
+Creating 16 signatures..
+	median        : 47859624 cycles
+	average       : 43135680 cycles
+
+Verifying 16 signatures..
+	median        : 22947750 cycles
+	average       : 22958169 cycles
+
+Signature size: 34627 (33.82 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 33626 (32.84 KiB)
+Benchmarking XMSSMT-SHA2_20/4_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_40/4_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 12
+Benchmarking variant XMSSMT-SHA2_40/4_512
+Generating keypair.. took 12036152.149000 us (12.04 sec), 43337753064 cycles
+Creating 16 signatures..
+	median        : 47542536 cycles
+	average       : 53054460 cycles
+
+Verifying 16 signatures..
+	median        : 23114718 cycles
+	average       : 23273856 cycles
+
+Signature size: 35909 (35.07 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 41972 (40.99 KiB)
+Benchmarking XMSSMT-SHA2_40/4_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_40/8_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 13
+Benchmarking variant XMSSMT-SHA2_40/8_512
+Generating keypair.. took 803015.523000 us (0.80 sec), 2891694348 cycles
+Creating 16 signatures..
+	median        : 47495754 cycles
+	average       : 42829440 cycles
+
+Verifying 16 signatures..
+	median        : 46440648 cycles
+	average       : 46503436 cycles
+
+Signature size: 69189 (67.57 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 76516 (74.72 KiB)
+Benchmarking XMSSMT-SHA2_40/8_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_60/6_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 15
+Benchmarking variant XMSSMT-SHA2_60/6_512
+Generating keypair.. took 18119859.063000 us (18.12 sec), 65241573480 cycles
+Creating 16 signatures..
+	median        : 68704668 cycles
+	average       : 69536712 cycles
+
+Verifying 16 signatures..
+	median        : 34608996 cycles
+	average       : 34674544 cycles
+
+Signature size: 53832 (52.57 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 68187 (66.59 KiB)
+Benchmarking XMSSMT-SHA2_60/6_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_60/12_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 16
+Benchmarking variant XMSSMT-SHA2_60/12_512
+Generating keypair.. took 1165670.983000 us (1.17 sec), 4197559644 cycles
+Creating 16 signatures..
+	median        : 47451924 cycles
+	average       : 42821040 cycles
+
+Verifying 16 signatures..
+	median        : 69522930 cycles
+	average       : 69514072 cycles
+
+Signature size: 103752 (101.32 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 119407 (116.61 KiB)
+Benchmarking XMSSMT-SHA2_60/12_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_20/2_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 33
+Benchmarking variant XMSSMT-SHA2_20/2_192
+Generating keypair.. took 554714.353000 us (0.55 sec), 1997951040 cycles
+Creating 16 signatures..
+	median        : 2467044 cycles
+	average       : 3074400 cycles
+
+Verifying 16 signatures..
+	median        : 1099980 cycles
+	average       : 1104084 cycles
+
+Signature size: 2907 (2.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 4158 (4.06 KiB)
+Benchmarking XMSSMT-SHA2_20/2_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_20/4_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 34
+Benchmarking variant XMSSMT-SHA2_20/4_192
+Generating keypair.. took 36929.901000 us (0.04 sec), 133595676 cycles
+Creating 16 signatures..
+	median        : 4259340 cycles
+	average       : 3868831 cycles
+
+Verifying 16 signatures..
+	median        : 2137932 cycles
+	average       : 2136228 cycles
+
+Signature size: 5307 (5.18 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 7066 (6.90 KiB)
+Benchmarking XMSSMT-SHA2_20/4_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_40/4_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 36
+Benchmarking variant XMSSMT-SHA2_40/4_192
+Generating keypair.. took 1108903.398000 us (1.11 sec), 3993020136 cycles
+Creating 16 signatures..
+	median        : 4302990 cycles
+	average       : 4805229 cycles
+
+Verifying 16 signatures..
+	median        : 2186424 cycles
+	average       : 2231601 cycles
+
+Signature size: 5789 (5.65 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 10372 (10.13 KiB)
+Benchmarking XMSSMT-SHA2_40/4_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_40/8_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 37
+Benchmarking variant XMSSMT-SHA2_40/8_192
+Generating keypair.. took 75228.891000 us (0.08 sec), 270959364 cycles
+Creating 16 signatures..
+	median        : 4279050 cycles
+	average       : 3913094 cycles
+
+Verifying 16 signatures..
+	median        : 4293126 cycles
+	average       : 4334205 cycles
+
+Signature size: 10589 (10.34 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 15716 (15.35 KiB)
+Benchmarking XMSSMT-SHA2_40/8_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_60/6_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 39
+Benchmarking variant XMSSMT-SHA2_60/6_192
+Generating keypair.. took 1644666.846000 us (1.64 sec), 5922093888 cycles
+Creating 16 signatures..
+	median        : 6206382 cycles
+	average       : 6301824 cycles
+
+Verifying 16 signatures..
+	median        : 3251826 cycles
+	average       : 3270832 cycles
+
+Signature size: 8672 (8.47 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 16587 (16.20 KiB)
+Benchmarking XMSSMT-SHA2_60/6_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHA2_60/12_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 40
+Benchmarking variant XMSSMT-SHA2_60/12_192
+Generating keypair.. took 107833.970000 us (0.11 sec), 388450260 cycles
+Creating 16 signatures..
+	median        : 4318524 cycles
+	average       : 4007923 cycles
+
+Verifying 16 signatures..
+	median        : 6467760 cycles
+	average       : 6541600 cycles
+
+Signature size: 15872 (15.50 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 24367 (23.80 KiB)
+Benchmarking XMSSMT-SHA2_60/12_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_20/2_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 17
+Benchmarking variant XMSSMT-SHAKE_20/2_256
+Generating keypair.. took 3034476.141000 us (3.03 sec), 10926481032 cycles
+Creating 16 signatures..
+	median        : 13278870 cycles
+	average       : 16824717 cycles
+
+Verifying 16 signatures..
+	median        : 5770854 cycles
+	average       : 5797718 cycles
+
+Signature size: 4899 (4.78 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 5966 (5.83 KiB)
+Benchmarking XMSSMT-SHAKE_20/2_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_20/4_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 18
+Benchmarking variant XMSSMT-SHAKE_20/4_256
+Generating keypair.. took 200573.656000 us (0.20 sec), 722327868 cycles
+Creating 16 signatures..
+	median        : 23823738 cycles
+	average       : 21869316 cycles
+
+Verifying 16 signatures..
+	median        : 11518020 cycles
+	average       : 11672112 cycles
+
+Signature size: 9123 (8.91 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 10842 (10.59 KiB)
+Benchmarking XMSSMT-SHAKE_20/4_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_40/4_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 20
+Benchmarking variant XMSSMT-SHAKE_40/4_256
+Generating keypair.. took 6051654.488000 us (6.05 sec), 21800594664 cycles
+Creating 16 signatures..
+	median        : 23788656 cycles
+	average       : 26626627 cycles
+
+Verifying 16 signatures..
+	median        : 11308122 cycles
+	average       : 11322333 cycles
+
+Signature size: 9765 (9.54 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 15156 (14.80 KiB)
+Benchmarking XMSSMT-SHAKE_40/4_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_40/8_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 21
+Benchmarking variant XMSSMT-SHAKE_40/8_256
+Generating keypair.. took 395092.220000 us (0.40 sec), 1422925776 cycles
+Creating 16 signatures..
+	median        : 23784876 cycles
+	average       : 21784267 cycles
+
+Verifying 16 signatures..
+	median        : 22552668 cycles
+	average       : 22835661 cycles
+
+Signature size: 18213 (17.79 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 24292 (23.72 KiB)
+Benchmarking XMSSMT-SHAKE_40/8_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_60/6_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 23
+Benchmarking variant XMSSMT-SHAKE_60/6_256
+Generating keypair.. took 9101533.164000 us (9.10 sec), 32771966400 cycles
+Creating 16 signatures..
+	median        : 34440912 cycles
+	average       : 34878096 cycles
+
+Verifying 16 signatures..
+	median        : 17060670 cycles
+	average       : 17128694 cycles
+
+Signature size: 14632 (14.29 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 24347 (23.78 KiB)
+Benchmarking XMSSMT-SHAKE_60/6_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_60/12_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 24
+Benchmarking variant XMSSMT-SHAKE_60/12_256
+Generating keypair.. took 592052.215000 us (0.59 sec), 2132075484 cycles
+Creating 16 signatures..
+	median        : 23932764 cycles
+	average       : 21996734 cycles
+
+Verifying 16 signatures..
+	median        : 33975306 cycles
+	average       : 33962196 cycles
+
+Signature size: 27304 (26.66 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 37743 (36.86 KiB)
+Benchmarking XMSSMT-SHAKE_60/12_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_20/4_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 26
+Benchmarking variant XMSSMT-SHAKE_20/4_512
+Generating keypair.. took 689132.511000 us (0.69 sec), 2481508404 cycles
+Creating 16 signatures..
+	median        : 83815794 cycles
+	average       : 75295944 cycles
+
+Verifying 16 signatures..
+	median        : 39808368 cycles
+	average       : 39899748 cycles
+
+Signature size: 34627 (33.82 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 33626 (32.84 KiB)
+Benchmarking XMSSMT-SHAKE_20/4_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_40/4_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 28
+Benchmarking variant XMSSMT-SHAKE_40/4_512
+Generating keypair.. took 20966169.665000 us (20.97 sec), 75490496244 cycles
+Creating 16 signatures..
+	median        : 82866564 cycles
+	average       : 92718765 cycles
+
+Verifying 16 signatures..
+	median        : 39879108 cycles
+	average       : 39875316 cycles
+
+Signature size: 35909 (35.07 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 41972 (40.99 KiB)
+Benchmarking XMSSMT-SHAKE_40/4_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_40/8_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 29
+Benchmarking variant XMSSMT-SHAKE_40/8_512
+Generating keypair.. took 1371745.640000 us (1.37 sec), 4944876840 cycles
+Creating 16 signatures..
+	median        : 83403126 cycles
+	average       : 75881073 cycles
+
+Verifying 16 signatures..
+	median        : 79286958 cycles
+	average       : 79378156 cycles
+
+Signature size: 69189 (67.57 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 76516 (74.72 KiB)
+Benchmarking XMSSMT-SHAKE_40/8_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_60/6_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 31
+Benchmarking variant XMSSMT-SHAKE_60/6_512
+Generating keypair.. took 31581958.679000 us (31.58 sec), 113727752028 cycles
+Creating 16 signatures..
+	median        : 119970360 cycles
+	average       : 121273668 cycles
+
+Verifying 16 signatures..
+	median        : 59860440 cycles
+	average       : 59892955 cycles
+
+Signature size: 53832 (52.57 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 68187 (66.59 KiB)
+Benchmarking XMSSMT-SHAKE_60/6_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE_60/12_512\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 32
+Benchmarking variant XMSSMT-SHAKE_60/12_512
+Generating keypair.. took 2041011.566000 us (2.04 sec), 7349705244 cycles
+Creating 16 signatures..
+	median        : 82872720 cycles
+	average       : 74372978 cycles
+
+Verifying 16 signatures..
+	median        : 119115792 cycles
+	average       : 119009971 cycles
+
+Signature size: 103752 (101.32 KiB)
+Public key size: 128 (0.12 KiB)
+Secret key size: 119407 (116.61 KiB)
+Benchmarking XMSSMT-SHAKE_60/12_512
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_20/2_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 41
+Benchmarking variant XMSSMT-SHAKE256_20/2_256
+Generating keypair.. took 2893348.742000 us (2.89 sec), 10433094588 cycles
+Creating 16 signatures..
+	median        : 12529494 cycles
+	average       : 15870388 cycles
+
+Verifying 16 signatures..
+	median        : 5531094 cycles
+	average       : 5534959 cycles
+
+Signature size: 4899 (4.78 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 5966 (5.83 KiB)
+Benchmarking XMSSMT-SHAKE256_20/2_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_20/4_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 42
+Benchmarking variant XMSSMT-SHAKE256_20/4_256
+Generating keypair.. took 193994.774000 us (0.19 sec), 698620392 cycles
+Creating 16 signatures..
+	median        : 22806234 cycles
+	average       : 20512531 cycles
+
+Verifying 16 signatures..
+	median        : 11090754 cycles
+	average       : 12160440 cycles
+
+Signature size: 9123 (8.91 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 10842 (10.59 KiB)
+Benchmarking XMSSMT-SHAKE256_20/4_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_40/4_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 44
+Benchmarking variant XMSSMT-SHAKE256_40/4_256
+Generating keypair.. took 5785238.505000 us (5.79 sec), 20830958172 cycles
+Creating 16 signatures..
+	median        : 22584744 cycles
+	average       : 25260360 cycles
+
+Verifying 16 signatures..
+	median        : 11067732 cycles
+	average       : 11063160 cycles
+
+Signature size: 9765 (9.54 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 15156 (14.80 KiB)
+Benchmarking XMSSMT-SHAKE256_40/4_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_40/8_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 45
+Benchmarking variant XMSSMT-SHAKE256_40/8_256
+Generating keypair.. took 377088.414000 us (0.38 sec), 1357966188 cycles
+Creating 16 signatures..
+	median        : 22758804 cycles
+	average       : 20425665 cycles
+
+Verifying 16 signatures..
+	median        : 22020138 cycles
+	average       : 22396980 cycles
+
+Signature size: 18213 (17.79 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 24292 (23.72 KiB)
+Benchmarking XMSSMT-SHAKE256_40/8_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_60/6_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 47
+Benchmarking variant XMSSMT-SHAKE256_60/6_256
+Generating keypair.. took 8619214.499000 us (8.62 sec), 31048091712 cycles
+Creating 16 signatures..
+	median        : 32707962 cycles
+	average       : 33052675 cycles
+
+Verifying 16 signatures..
+	median        : 16657614 cycles
+	average       : 16658901 cycles
+
+Signature size: 14632 (14.29 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 24347 (23.78 KiB)
+Benchmarking XMSSMT-SHAKE256_60/6_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_60/12_256\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 48
+Benchmarking variant XMSSMT-SHAKE256_60/12_256
+Generating keypair.. took 559167.916000 us (0.56 sec), 2019728664 cycles
+Creating 16 signatures..
+	median        : 22604778 cycles
+	average       : 20586628 cycles
+
+Verifying 16 signatures..
+	median        : 32743098 cycles
+	average       : 32783152 cycles
+
+Signature size: 27304 (26.66 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 37743 (36.86 KiB)
+Benchmarking XMSSMT-SHAKE256_60/12_256
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_20/2_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 49
+Benchmarking variant XMSSMT-SHAKE256_20/2_192
+Generating keypair.. took 2138820.644000 us (2.14 sec), 7701230628 cycles
+Creating 16 signatures..
+	median        : 9301482 cycles
+	average       : 11777460 cycles
+
+Verifying 16 signatures..
+	median        : 4125564 cycles
+	average       : 4124138 cycles
+
+Signature size: 2907 (2.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 4158 (4.06 KiB)
+Benchmarking XMSSMT-SHAKE256_20/2_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_20/4_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 50
+Benchmarking variant XMSSMT-SHAKE256_20/4_192
+Generating keypair.. took 142188.059000 us (0.14 sec), 513443304 cycles
+Creating 16 signatures..
+	median        : 16590348 cycles
+	average       : 14933467 cycles
+
+Verifying 16 signatures..
+	median        : 8076150 cycles
+	average       : 8079285 cycles
+
+Signature size: 5307 (5.18 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 7066 (6.90 KiB)
+Benchmarking XMSSMT-SHAKE256_20/4_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_40/4_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 52
+Benchmarking variant XMSSMT-SHAKE256_40/4_192
+Generating keypair.. took 4255033.239000 us (4.26 sec), 15321653784 cycles
+Creating 16 signatures..
+	median        : 16670448 cycles
+	average       : 18727728 cycles
+
+Verifying 16 signatures..
+	median        : 8214084 cycles
+	average       : 8431941 cycles
+
+Signature size: 5789 (5.65 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 10372 (10.13 KiB)
+Benchmarking XMSSMT-SHAKE256_40/4_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_40/8_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 53
+Benchmarking variant XMSSMT-SHAKE256_40/8_192
+Generating keypair.. took 271997.914000 us (0.27 sec), 979483644 cycles
+Creating 16 signatures..
+	median        : 16741926 cycles
+	average       : 15037857 cycles
+
+Verifying 16 signatures..
+	median        : 16256556 cycles
+	average       : 16269410 cycles
+
+Signature size: 10589 (10.34 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 15716 (15.35 KiB)
+Benchmarking XMSSMT-SHAKE256_40/8_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_60/6_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 55
+Benchmarking variant XMSSMT-SHAKE256_60/6_192
+Generating keypair.. took 6345687.134000 us (6.35 sec), 22849024932 cycles
+Creating 16 signatures..
+	median        : 24038622 cycles
+	average       : 24340063 cycles
+
+Verifying 16 signatures..
+	median        : 12288024 cycles
+	average       : 12324535 cycles
+
+Signature size: 8672 (8.47 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 16587 (16.20 KiB)
+Benchmarking XMSSMT-SHAKE256_60/6_192
+
+/usr/bin/gcc -DXMSSMT -DXMSS_VARIANT=\"XMSSMT-SHAKE256_60/12_192\" -Wall -g -O3 -Wextra -Wpedantic -o test/speed params.c hash.c fips202.c hash_address.c randombytes.c wots.c xmss.c xmss_core_fast.c xmss_commons.c utils.c test/speed.c -lcrypto
+oid = 56
+Benchmarking variant XMSSMT-SHAKE256_60/12_192
+Generating keypair.. took 407271.863000 us (0.41 sec), 1470316644 cycles
+Creating 16 signatures..
+	median        : 16589088 cycles
+	average       : 15394492 cycles
+
+Verifying 16 signatures..
+	median        : 24196410 cycles
+	average       : 24211531 cycles
+
+Signature size: 15872 (15.50 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 24367 (23.80 KiB)
+Benchmarking XMSSMT-SHAKE256_60/12_192
+
